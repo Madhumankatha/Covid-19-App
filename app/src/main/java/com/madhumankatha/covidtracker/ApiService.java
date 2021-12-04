@@ -1,14 +1,13 @@
-package com.madhumankatha.covidtracker.demo;
-
-import com.madhumankatha.covidtracker.demo.Covid;
+package com.madhumankatha.covidtracker;
 
 import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-public interface APIService {
+public interface ApiService {
 
     @GET("continents?yesterday&sort")
     Call<ArrayList<Covid>> getCovidList();
+
 }
